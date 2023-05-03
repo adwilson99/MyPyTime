@@ -324,6 +324,12 @@ def vatertag(year=None):
     """
     return after(easter(year), '39days').date()
 
+def merdeka(year=None):
+    """
+    merdeka is Malaysian's indepence day
+    """
+    return datetime.date(int(year), 8, 31) if year else datetime.date(_year, 8, 31)
+
 
 if __name__ == '__main__':
     # _time_filter('2015-01-03')
